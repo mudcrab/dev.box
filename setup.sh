@@ -20,4 +20,16 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 
 sudo apt-get update
 
-sudo apt-get install -y git build-essential nodejs yarn nginx ruby-dev cmake python-dev python3-dev vim-nox htop
+sudo apt-get install -y git build-essential nodejs yarn nginx ruby-dev cmake python-dev python3-dev vim-nox htop tmux neovim python-pip
+
+pip install neovim
+
+# Install Go
+
+mkdir -p /usr/local/go
+
+wget https://dl.google.com/go/go1.10.2.linux-amd64.tar.gz
+
+tar -C /usr/local -xzf go1.10.2.linux-amd64.tar.gz
+
+echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
