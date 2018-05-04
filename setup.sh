@@ -4,7 +4,7 @@ sudo apt-get update && sudo apt-get install -y curl
 
 # Add repositories
 
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 
 # Pre-install setup

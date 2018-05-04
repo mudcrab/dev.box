@@ -22,6 +22,8 @@ ln -s ~/.dot/nvim.init ~/.vimrc
 ln -s ~/.dot/.gitconfig ~/.gitconfig
 ln -s ~/.dot/.Xresources ~/.Xresources
 
+ln -s /vagrant ~/project
+
 echo 'PATH=~/.yarn/bin:$PATH' >> .bashrc
 
 yarn global add typescript tern
